@@ -21,7 +21,7 @@ struct OAuth2 {
         withCallbackURL: URL(string: VimsterConstants.Login.Strings.callbackUrl)!,
         scope: "", state: generateState(withLength: 20),
         success: { credential, response, parameters in
-            print(credential.oauthToken)
+            VimsterKeychain.shared.setAccessToken(token: credential.oauthToken)
     },
         failure: { error in
             print(error.localizedDescription)

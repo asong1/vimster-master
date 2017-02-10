@@ -18,6 +18,11 @@ struct VimsterConstants {
             static let appDescription = "Make API calls to Vimeo!"
             static let buttonTitle = "Login"
         }
+        
+        struct KeychainConfiguration {
+            static let userToken = "GhostDustersService.oauth.login"
+        }
+        
     }
 
 }

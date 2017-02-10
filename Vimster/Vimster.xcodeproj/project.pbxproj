@@ -10,6 +10,9 @@
 		5353B1E91E4E213D0089041B /* VimsterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1E81E4E213D0089041B /* VimsterConstants.swift */; };
 		5353B1EC1E4E265F0089041B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1EB1E4E265F0089041B /* LoginViewController.swift */; };
 		5353B1EE1E4E26970089041B /* Oauth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1ED1E4E26970089041B /* Oauth2.swift */; };
+		5353B1F51E4E46A90089041B /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1F21E4E46A90089041B /* KeychainWrapper.m */; };
+		5353B1F61E4E46A90089041B /* NSMutableData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1F41E4E46A90089041B /* NSMutableData+AES.m */; };
+		5353B1F91E4E46FA0089041B /* Vimster+Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1F81E4E46FA0089041B /* Vimster+Keychain.swift */; };
 		535AEEFB1E4E166500D5C542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEEFA1E4E166500D5C542 /* AppDelegate.swift */; };
 		535AEF021E4E166500D5C542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF011E4E166500D5C542 /* Assets.xcassets */; };
 		535AEF051E4E166500D5C542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,12 @@
 		5353B1E81E4E213D0089041B /* VimsterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimsterConstants.swift; sourceTree = "<group>"; };
 		5353B1EB1E4E265F0089041B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5353B1ED1E4E26970089041B /* Oauth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oauth2.swift; sourceTree = "<group>"; };
+		5353B1F01E4E46A90089041B /* Vimster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vimster-Bridging-Header.h"; sourceTree = "<group>"; };
+		5353B1F11E4E46A90089041B /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		5353B1F21E4E46A90089041B /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		5353B1F31E4E46A90089041B /* NSMutableData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+AES.h"; sourceTree = "<group>"; };
+		5353B1F41E4E46A90089041B /* NSMutableData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+AES.m"; sourceTree = "<group>"; };
+		5353B1F81E4E46FA0089041B /* Vimster+Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Vimster+Keychain.swift"; sourceTree = "<group>"; };
 		535AEEF71E4E166500D5C542 /* Vimster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535AEEFA1E4E166500D5C542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535AEF011E4E166500D5C542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5353B1E81E4E213D0089041B /* VimsterConstants.swift */,
+				5353B1EF1E4E46790089041B /* Utilities */,
 				535AEF061E4E166500D5C542 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -93,6 +103,27 @@
 				5353B1EB1E4E265F0089041B /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5353B1EF1E4E46790089041B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5353B1F01E4E46A90089041B /* Vimster-Bridging-Header.h */,
+				5353B1F71E4E46B60089041B /* Keychain */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		5353B1F71E4E46B60089041B /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				5353B1F81E4E46FA0089041B /* Vimster+Keychain.swift */,
+				5353B1F11E4E46A90089041B /* KeychainWrapper.h */,
+				5353B1F21E4E46A90089041B /* KeychainWrapper.m */,
+				5353B1F31E4E46A90089041B /* NSMutableData+AES.h */,
+				5353B1F41E4E46A90089041B /* NSMutableData+AES.m */,
+			);
+			name = Keychain;
 			sourceTree = "<group>";
 		};
 		535AEEEE1E4E166500D5C542 = {
@@ -222,6 +253,7 @@
 				TargetAttributes = {
 					535AEEF61E4E166500D5C542 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					53E767DB1E4E1B6C00897F2F = {
@@ -369,9 +401,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5353B1EC1E4E265F0089041B /* LoginViewController.swift in Sources */,
+				5353B1F61E4E46A90089041B /* NSMutableData+AES.m in Sources */,
 				5353B1E91E4E213D0089041B /* VimsterConstants.swift in Sources */,
 				5353B1EE1E4E26970089041B /* Oauth2.swift in Sources */,
 				535AEEFB1E4E166500D5C542 /* AppDelegate.swift in Sources */,
+				5353B1F91E4E46FA0089041B /* Vimster+Keychain.swift in Sources */,
+				5353B1F51E4E46A90089041B /* KeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,10 +536,13 @@
 			baseConfigurationReference = 6E28BA4B4BE24A2A50FCBB91 /* Pods-Vimster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Vimster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LexCorp.Vimster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vimster/Vimster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -514,10 +552,12 @@
 			baseConfigurationReference = 05981062FFDC5096B2DF5477 /* Pods-Vimster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Vimster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LexCorp.Vimster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vimster/Vimster-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

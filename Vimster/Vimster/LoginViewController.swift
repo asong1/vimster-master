@@ -39,7 +39,11 @@ class LoginViewController: UIViewController {
 
     
     fileprivate func login() {
-        self.oauthLogin()
+        if VimsterKeychain.shared.token == nil {
+            self.oauthLogin()
+        } else {
+            print(VimsterKeychain.shared.token)
+        }
     }
     
     fileprivate func setupViews() {
