@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NzZ-f5-ggz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="bS5-DX-PZ4">
+            <objects>
+                <viewController id="NzZ-f5-ggz" customClass="LoginViewController" customModule="Vimster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jOf-8I-OcL"/>
+                        <viewControllerLayoutGuide type="bottom" id="IYX-gp-P6e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FxY-25-rnl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-5G-Zo4">
+                                <rect key="frame" x="122" y="60" width="130.5" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h39-Zn-TxI">
+                                <rect key="frame" x="100" y="131" width="175.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJc-W7-Fne">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="NzZ-f5-ggz" eventType="touchUpInside" id="47e-4u-eIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h39-Zn-TxI" firstAttribute="centerX" secondItem="FxY-25-rnl" secondAttribute="centerX" id="0YE-nL-Dmj"/>
+                            <constraint firstItem="PJc-W7-Fne" firstAttribute="centerY" secondItem="FxY-25-rnl" secondAttribute="centerY" id="Gar-el-CGX"/>
+                            <constraint firstItem="h39-Zn-TxI" firstAttribute="top" secondItem="JIo-5G-Zo4" secondAttribute="bottom" constant="30" id="O2Y-FS-ljn"/>
+                            <constraint firstItem="PJc-W7-Fne" firstAttribute="centerX" secondItem="FxY-25-rnl" secondAttribute="centerX" id="Pyz-JV-XDX"/>
+                            <constraint firstItem="JIo-5G-Zo4" firstAttribute="centerX" secondItem="FxY-25-rnl" secondAttribute="centerX" id="XZC-5F-1rx"/>
+                            <constraint firstItem="JIo-5G-Zo4" firstAttribute="top" secondItem="jOf-8I-OcL" secondAttribute="bottom" constant="40" id="s11-fk-DfY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appDescriptionLabel" destination="h39-Zn-TxI" id="gGF-tf-shn"/>
+                        <outlet property="appTitleLabel" destination="JIo-5G-Zo4" id="uh9-2W-eFI"/>
+                        <outlet property="loginButton" destination="PJc-W7-Fne" id="ubx-u2-8Dd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="god-E7-JTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="12.143928035982009"/>
+        </scene>
+    </scenes>
+</document>

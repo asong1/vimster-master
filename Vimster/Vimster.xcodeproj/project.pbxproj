@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5353B1E91E4E213D0089041B /* VimsterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1E81E4E213D0089041B /* VimsterConstants.swift */; };
+		5353B1EC1E4E265F0089041B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1EB1E4E265F0089041B /* LoginViewController.swift */; };
+		5353B1EE1E4E26970089041B /* Oauth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1ED1E4E26970089041B /* Oauth2.swift */; };
 		535AEEFB1E4E166500D5C542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEEFA1E4E166500D5C542 /* AppDelegate.swift */; };
-		535AEEFD1E4E166500D5C542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535AEEFC1E4E166500D5C542 /* ViewController.swift */; };
-		535AEF001E4E166500D5C542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535AEEFE1E4E166500D5C542 /* Main.storyboard */; };
 		535AEF021E4E166500D5C542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF011E4E166500D5C542 /* Assets.xcassets */; };
 		535AEF051E4E166500D5C542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */; };
+		53827ABB1E4E1D1500905319 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53827ABA1E4E1D1500905319 /* Login.storyboard */; };
 		53E767DF1E4E1B6C00897F2F /* VimsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */; };
 		E7D1436C9FA52AC96DF48A92 /* Pods_Vimster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3054173A1D82A6C3991BAB0 /* Pods_Vimster.framework */; };
 		FA114A20A76067CC362B357C /* Pods_VimsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F554C282CB06F658418C8BB /* Pods_VimsterTests.framework */; };
@@ -29,13 +31,15 @@
 
 /* Begin PBXFileReference section */
 		05981062FFDC5096B2DF5477 /* Pods-Vimster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vimster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vimster/Pods-Vimster.release.xcconfig"; sourceTree = "<group>"; };
+		5353B1E81E4E213D0089041B /* VimsterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimsterConstants.swift; sourceTree = "<group>"; };
+		5353B1EB1E4E265F0089041B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5353B1ED1E4E26970089041B /* Oauth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oauth2.swift; sourceTree = "<group>"; };
 		535AEEF71E4E166500D5C542 /* Vimster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535AEEFA1E4E166500D5C542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		535AEEFC1E4E166500D5C542 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		535AEEFF1E4E166500D5C542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		535AEF011E4E166500D5C542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535AEF041E4E166500D5C542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535AEF061E4E166500D5C542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53827ABA1E4E1D1500905319 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		53E767DC1E4E1B6C00897F2F /* VimsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimsterTests.swift; sourceTree = "<group>"; };
 		53E767E01E4E1B6C00897F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5353B1E61E4E209B0089041B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5353B1ED1E4E26970089041B /* Oauth2.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5353B1E71E4E21220089041B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5353B1E81E4E213D0089041B /* VimsterConstants.swift */,
+				535AEF061E4E166500D5C542 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5353B1EA1E4E26140089041B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5353B1EB1E4E265F0089041B /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		535AEEEE1E4E166500D5C542 = {
 			isa = PBXGroup;
 			children = (
@@ -90,13 +119,22 @@
 			isa = PBXGroup;
 			children = (
 				535AEEFA1E4E166500D5C542 /* AppDelegate.swift */,
-				535AEEFC1E4E166500D5C542 /* ViewController.swift */,
-				535AEEFE1E4E166500D5C542 /* Main.storyboard */,
+				5353B1EA1E4E26140089041B /* ViewControllers */,
+				5353B1E61E4E209B0089041B /* Models */,
+				53827ABC1E4E1D1C00905319 /* StoryBoards */,
 				535AEF011E4E166500D5C542 /* Assets.xcassets */,
 				535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */,
-				535AEF061E4E166500D5C542 /* Info.plist */,
+				5353B1E71E4E21220089041B /* Supporting Files */,
 			);
 			path = Vimster;
+			sourceTree = "<group>";
+		};
+		53827ABC1E4E1D1C00905319 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				53827ABA1E4E1D1500905319 /* Login.storyboard */,
+			);
+			name = StoryBoards;
 			sourceTree = "<group>";
 		};
 		53E767DD1E4E1B6C00897F2F /* VimsterTests */ = {
@@ -217,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53827ABB1E4E1D1500905319 /* Login.storyboard in Resources */,
 				535AEF051E4E166500D5C542 /* LaunchScreen.storyboard in Resources */,
 				535AEF021E4E166500D5C542 /* Assets.xcassets in Resources */,
-				535AEF001E4E166500D5C542 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				535AEEFD1E4E166500D5C542 /* ViewController.swift in Sources */,
+				5353B1EC1E4E265F0089041B /* LoginViewController.swift in Sources */,
+				5353B1E91E4E213D0089041B /* VimsterConstants.swift in Sources */,
+				5353B1EE1E4E26970089041B /* Oauth2.swift in Sources */,
 				535AEEFB1E4E166500D5C542 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,14 +394,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		535AEEFE1E4E166500D5C542 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				535AEEFF1E4E166500D5C542 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -546,6 +578,7 @@
 				53E767E51E4E1B6C00897F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
