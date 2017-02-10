@@ -1,0 +1,6 @@
+framework module Pods_VimsterTests {
+  umbrella header "Pods-VimsterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

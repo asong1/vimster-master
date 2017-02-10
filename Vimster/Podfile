@@ -1,0 +1,15 @@
+project ‘Vimster.xcodeproj'
+
+platform :ios, '9.0'
+
+target ‘Vimster’ do
+  use_frameworks!
+  # Pods for Vimster
+  pod 'OAuthSwift', '~> 1.1.0'
+
+  target ‘VimsterTests’ do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

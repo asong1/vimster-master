@@ -12,9 +12,23 @@
 		535AEF001E4E166500D5C542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535AEEFE1E4E166500D5C542 /* Main.storyboard */; };
 		535AEF021E4E166500D5C542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF011E4E166500D5C542 /* Assets.xcassets */; };
 		535AEF051E4E166500D5C542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */; };
+		53E767DF1E4E1B6C00897F2F /* VimsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */; };
+		E7D1436C9FA52AC96DF48A92 /* Pods_Vimster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3054173A1D82A6C3991BAB0 /* Pods_Vimster.framework */; };
+		FA114A20A76067CC362B357C /* Pods_VimsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F554C282CB06F658418C8BB /* Pods_VimsterTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		53E767E11E4E1B6C00897F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 535AEEEF1E4E166500D5C542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 535AEEF61E4E166500D5C542;
+			remoteInfo = Vimster;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		05981062FFDC5096B2DF5477 /* Pods-Vimster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vimster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vimster/Pods-Vimster.release.xcconfig"; sourceTree = "<group>"; };
 		535AEEF71E4E166500D5C542 /* Vimster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535AEEFA1E4E166500D5C542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535AEEFC1E4E166500D5C542 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,14 @@
 		535AEF011E4E166500D5C542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535AEF041E4E166500D5C542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535AEF061E4E166500D5C542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E767DC1E4E1B6C00897F2F /* VimsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimsterTests.swift; sourceTree = "<group>"; };
+		53E767E01E4E1B6C00897F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E28BA4B4BE24A2A50FCBB91 /* Pods-Vimster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vimster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vimster/Pods-Vimster.debug.xcconfig"; sourceTree = "<group>"; };
+		7F554C282CB06F658418C8BB /* Pods_VimsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VimsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EC31C613589F9D6FD7A77C /* Pods-VimsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VimsterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VimsterTests/Pods-VimsterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3054173A1D82A6C3991BAB0 /* Pods_Vimster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vimster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB8ADEAB46390ECAD402247 /* Pods-VimsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VimsterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VimsterTests/Pods-VimsterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +51,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D1436C9FA52AC96DF48A92 /* Pods_Vimster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E767D91E4E1B6C00897F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA114A20A76067CC362B357C /* Pods_VimsterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				535AEEF91E4E166500D5C542 /* Vimster */,
+				53E767DD1E4E1B6C00897F2F /* VimsterTests */,
 				535AEEF81E4E166500D5C542 /* Products */,
+				6C7AE80F1A9629AB2762D41F /* Pods */,
+				C4859DDC9D990186A7E64B98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				535AEEF71E4E166500D5C542 /* Vimster.app */,
+				53E767DC1E4E1B6C00897F2F /* VimsterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +99,35 @@
 			path = Vimster;
 			sourceTree = "<group>";
 		};
+		53E767DD1E4E1B6C00897F2F /* VimsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */,
+				53E767E01E4E1B6C00897F2F /* Info.plist */,
+			);
+			path = VimsterTests;
+			sourceTree = "<group>";
+		};
+		6C7AE80F1A9629AB2762D41F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E28BA4B4BE24A2A50FCBB91 /* Pods-Vimster.debug.xcconfig */,
+				05981062FFDC5096B2DF5477 /* Pods-Vimster.release.xcconfig */,
+				C4EC31C613589F9D6FD7A77C /* Pods-VimsterTests.debug.xcconfig */,
+				EBB8ADEAB46390ECAD402247 /* Pods-VimsterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4859DDC9D990186A7E64B98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3054173A1D82A6C3991BAB0 /* Pods_Vimster.framework */,
+				7F554C282CB06F658418C8BB /* Pods_VimsterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 535AEF091E4E166500D5C542 /* Build configuration list for PBXNativeTarget "Vimster" */;
 			buildPhases = (
+				D5224B1F37631FB8845A6451 /* [CP] Check Pods Manifest.lock */,
 				535AEEF31E4E166500D5C542 /* Sources */,
 				535AEEF41E4E166500D5C542 /* Frameworks */,
 				535AEEF51E4E166500D5C542 /* Resources */,
+				FA4D55CC45B132AC5532CD28 /* [CP] Embed Pods Frameworks */,
+				A929143BF2DA208EC5EDB254 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -83,6 +150,27 @@
 			productName = Vimster;
 			productReference = 535AEEF71E4E166500D5C542 /* Vimster.app */;
 			productType = "com.apple.product-type.application";
+		};
+		53E767DB1E4E1B6C00897F2F /* VimsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53E767E31E4E1B6C00897F2F /* Build configuration list for PBXNativeTarget "VimsterTests" */;
+			buildPhases = (
+				B51E1464C8255E352B1D5954 /* [CP] Check Pods Manifest.lock */,
+				53E767D81E4E1B6C00897F2F /* Sources */,
+				53E767D91E4E1B6C00897F2F /* Frameworks */,
+				53E767DA1E4E1B6C00897F2F /* Resources */,
+				9F1F6A97C49638B16F709A04 /* [CP] Embed Pods Frameworks */,
+				88600B078EB6BDCE9875995A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53E767E21E4E1B6C00897F2F /* PBXTargetDependency */,
+			);
+			name = VimsterTests;
+			productName = VimsterTests;
+			productReference = 53E767DC1E4E1B6C00897F2F /* VimsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +185,11 @@
 					535AEEF61E4E166500D5C542 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					53E767DB1E4E1B6C00897F2F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 535AEEF61E4E166500D5C542;
 					};
 				};
 			};
@@ -114,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				535AEEF61E4E166500D5C542 /* Vimster */,
+				53E767DB1E4E1B6C00897F2F /* VimsterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,7 +223,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53E767DA1E4E1B6C00897F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88600B078EB6BDCE9875995A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VimsterTests/Pods-VimsterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1F6A97C49638B16F709A04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VimsterTests/Pods-VimsterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A929143BF2DA208EC5EDB254 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vimster/Pods-Vimster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B51E1464C8255E352B1D5954 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5224B1F37631FB8845A6451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4D55CC45B132AC5532CD28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vimster/Pods-Vimster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		535AEEF31E4E166500D5C542 /* Sources */ = {
@@ -141,7 +335,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53E767D81E4E1B6C00897F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E767DF1E4E1B6C00897F2F /* VimsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53E767E21E4E1B6C00897F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 535AEEF61E4E166500D5C542 /* Vimster */;
+			targetProxy = 53E767E11E4E1B6C00897F2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		535AEEFE1E4E166500D5C542 /* Main.storyboard */ = {
@@ -256,6 +466,7 @@
 		};
 		535AEF0A1E4E166500D5C542 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E28BA4B4BE24A2A50FCBB91 /* Pods-Vimster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Vimster/Info.plist;
@@ -268,6 +479,7 @@
 		};
 		535AEF0B1E4E166500D5C542 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05981062FFDC5096B2DF5477 /* Pods-Vimster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Vimster/Info.plist;
@@ -275,6 +487,34 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LexCorp.Vimster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		53E767E41E4E1B6C00897F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EC31C613589F9D6FD7A77C /* Pods-VimsterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VimsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LexCorp.VimsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vimster.app/Vimster";
+			};
+			name = Debug;
+		};
+		53E767E51E4E1B6C00897F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB8ADEAB46390ECAD402247 /* Pods-VimsterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VimsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LexCorp.VimsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vimster.app/Vimster";
 			};
 			name = Release;
 		};
@@ -295,6 +535,15 @@
 			buildConfigurations = (
 				535AEF0A1E4E166500D5C542 /* Debug */,
 				535AEF0B1E4E166500D5C542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53E767E31E4E1B6C00897F2F /* Build configuration list for PBXNativeTarget "VimsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E767E41E4E1B6C00897F2F /* Debug */,
+				53E767E51E4E1B6C00897F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
