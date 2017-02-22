@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct NetworkLayerConfiguration {
+
+    func setup() {
+        guard let url = URL(string: VimsterConstants.Network.baseUrl) else {
+            return
+        }
+    
+        BackendConfiguration.shared = BackendConfiguration(baseUrl: url)
+        
+        // Network Queue init
+        NetworkQueue.shared = NetworkQueue()
+    }
+
+}

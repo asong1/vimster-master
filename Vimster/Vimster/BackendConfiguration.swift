@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+public final class BackendConfiguration {
+    
+    let baseUrl: URL
+
+    public init(baseUrl: URL) {
+        self.baseUrl = baseUrl
+    }
+
+    public static var shared: BackendConfiguration!
+}
