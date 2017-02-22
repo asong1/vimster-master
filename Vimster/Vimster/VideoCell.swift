@@ -6,4 +6,11 @@
 //  Copyright © 2017 LexCorp. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class VideoCell: UICollectionViewCell {
+
+    @IBOutlet weak var videoTitle: UILabel!
+    @IBOutlet weak var webView: UIWebView!
+    
+}

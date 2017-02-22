@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5335E4F91E520E7200E9E32D /* SearchCategoryViewController+UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335E4F81E520E7200E9E32D /* SearchCategoryViewController+UIPickerView.swift */; };
+		5335E4FB1E52326900E9E32D /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335E4FA1E52326900E9E32D /* SearchResultsViewController.swift */; };
+		5335E5051E524AE600E9E32D /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335E5041E524AE600E9E32D /* VideoCell.swift */; };
 		5353B1E91E4E213D0089041B /* VimsterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1E81E4E213D0089041B /* VimsterConstants.swift */; };
 		5353B1EC1E4E265F0089041B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1EB1E4E265F0089041B /* LoginViewController.swift */; };
 		5353B1EE1E4E26970089041B /* Oauth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353B1ED1E4E26970089041B /* Oauth2.swift */; };
@@ -17,6 +20,27 @@
 		535AEF021E4E166500D5C542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF011E4E166500D5C542 /* Assets.xcassets */; };
 		535AEF051E4E166500D5C542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */; };
 		53827ABB1E4E1D1500905319 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53827ABA1E4E1D1500905319 /* Login.storyboard */; };
+		539D9C8B1E50D72700A56998 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C8A1E50D72700A56998 /* NetworkService.swift */; };
+		539D9C8D1E50E44300A56998 /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C8C1E50E44300A56998 /* NetworkQueue.swift */; };
+		539D9C901E50EB4B00A56998 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C8F1E50EB4B00A56998 /* NetworkOperation.swift */; };
+		539D9C921E50F11F00A56998 /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C911E50F11F00A56998 /* BackendAPIRequest.swift */; };
+		539D9C941E50F35000A56998 /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C931E50F35000A56998 /* BackendConfiguration.swift */; };
+		539D9C961E50F3CC00A56998 /* NetworkLayerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C951E50F3CC00A56998 /* NetworkLayerConfiguration.swift */; };
+		539D9C981E50F84700A56998 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C971E50F84700A56998 /* BackendService.swift */; };
+		539D9C9A1E5100DB00A56998 /* ServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C991E5100DB00A56998 /* ServiceOperation.swift */; };
+		539D9C9C1E51017500A56998 /* NSError+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C9B1E51017400A56998 /* NSError+Failure.swift */; };
+		539D9C9F1E51031800A56998 /* VimeoVideoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9C9E1E51031800A56998 /* VimeoVideoOperation.swift */; };
+		539D9CA11E51037C00A56998 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CA01E51037C00A56998 /* Video.swift */; };
+		539D9CA31E51050600A56998 /* VimeoVideoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CA21E51050600A56998 /* VimeoVideoRequest.swift */; };
+		539D9CA51E51067300A56998 /* VimeoVideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CA41E51067300A56998 /* VimeoVideoService.swift */; };
+		539D9CA71E510F2B00A56998 /* SearchCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539D9CA61E510F2B00A56998 /* SearchCategory.storyboard */; };
+		539D9CA91E51103600A56998 /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CA81E51103600A56998 /* SearchCategoryViewController.swift */; };
+		539D9CAC1E511DCA00A56998 /* ParsedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CAB1E511DCA00A56998 /* ParsedItem.swift */; };
+		539D9CAE1E511DEC00A56998 /* ArrayResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CAD1E511DEC00A56998 /* ArrayResponseMapper.swift */; };
+		539D9CB01E511E0D00A56998 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CAF1E511E0D00A56998 /* ResponseMapper.swift */; };
+		539D9CB21E511E2100A56998 /* ResponseMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CB11E511E2100A56998 /* ResponseMapperProtocol.swift */; };
+		539D9CB41E511E3B00A56998 /* VideoResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CB31E511E3B00A56998 /* VideoResponseMapper.swift */; };
+		53C970E91E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C970E81E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift */; };
 		53E767DF1E4E1B6C00897F2F /* VimsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */; };
 		E7D1436C9FA52AC96DF48A92 /* Pods_Vimster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3054173A1D82A6C3991BAB0 /* Pods_Vimster.framework */; };
 		FA114A20A76067CC362B357C /* Pods_VimsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F554C282CB06F658418C8BB /* Pods_VimsterTests.framework */; };
@@ -34,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		05981062FFDC5096B2DF5477 /* Pods-Vimster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vimster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vimster/Pods-Vimster.release.xcconfig"; sourceTree = "<group>"; };
+		5335E4F81E520E7200E9E32D /* SearchCategoryViewController+UIPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchCategoryViewController+UIPickerView.swift"; sourceTree = "<group>"; };
+		5335E4FA1E52326900E9E32D /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		5335E5041E524AE600E9E32D /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		5353B1E81E4E213D0089041B /* VimsterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimsterConstants.swift; sourceTree = "<group>"; };
 		5353B1EB1E4E265F0089041B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5353B1ED1E4E26970089041B /* Oauth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oauth2.swift; sourceTree = "<group>"; };
@@ -49,6 +76,27 @@
 		535AEF041E4E166500D5C542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		535AEF061E4E166500D5C542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53827ABA1E4E1D1500905319 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		539D9C8A1E50D72700A56998 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		539D9C8C1E50E44300A56998 /* NetworkQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
+		539D9C8F1E50EB4B00A56998 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		539D9C911E50F11F00A56998 /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
+		539D9C931E50F35000A56998 /* BackendConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendConfiguration.swift; sourceTree = "<group>"; };
+		539D9C951E50F3CC00A56998 /* NetworkLayerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayerConfiguration.swift; sourceTree = "<group>"; };
+		539D9C971E50F84700A56998 /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		539D9C991E5100DB00A56998 /* ServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOperation.swift; sourceTree = "<group>"; };
+		539D9C9B1E51017400A56998 /* NSError+Failure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Failure.swift"; sourceTree = "<group>"; };
+		539D9C9E1E51031800A56998 /* VimeoVideoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimeoVideoOperation.swift; sourceTree = "<group>"; };
+		539D9CA01E51037C00A56998 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		539D9CA21E51050600A56998 /* VimeoVideoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimeoVideoRequest.swift; sourceTree = "<group>"; };
+		539D9CA41E51067300A56998 /* VimeoVideoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VimeoVideoService.swift; sourceTree = "<group>"; };
+		539D9CA61E510F2B00A56998 /* SearchCategory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchCategory.storyboard; sourceTree = "<group>"; };
+		539D9CA81E51103600A56998 /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
+		539D9CAB1E511DCA00A56998 /* ParsedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedItem.swift; sourceTree = "<group>"; };
+		539D9CAD1E511DEC00A56998 /* ArrayResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayResponseMapper.swift; sourceTree = "<group>"; };
+		539D9CAF1E511E0D00A56998 /* ResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
+		539D9CB11E511E2100A56998 /* ResponseMapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapperProtocol.swift; sourceTree = "<group>"; };
+		539D9CB31E511E3B00A56998 /* VideoResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoResponseMapper.swift; sourceTree = "<group>"; };
+		53C970E81E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchResultsViewController+UITableView.swift"; sourceTree = "<group>"; };
 		53E767DC1E4E1B6C00897F2F /* VimsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimsterTests.swift; sourceTree = "<group>"; };
 		53E767E01E4E1B6C00897F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,10 +127,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5335E5031E524AD800E9E32D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5335E5041E524AE600E9E32D /* VideoCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		5353B1E61E4E209B0089041B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5353B1ED1E4E26970089041B /* Oauth2.swift */,
+				539D9CA01E51037C00A56998 /* Video.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -92,6 +149,7 @@
 			children = (
 				5353B1E81E4E213D0089041B /* VimsterConstants.swift */,
 				5353B1EF1E4E46790089041B /* Utilities */,
+				535AEF011E4E166500D5C542 /* Assets.xcassets */,
 				535AEF061E4E166500D5C542 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -101,6 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				5353B1EB1E4E265F0089041B /* LoginViewController.swift */,
+				539D9CA81E51103600A56998 /* SearchCategoryViewController.swift */,
+				5335E4F81E520E7200E9E32D /* SearchCategoryViewController+UIPickerView.swift */,
+				5335E4FA1E52326900E9E32D /* SearchResultsViewController.swift */,
+				53C970E81E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -151,11 +213,12 @@
 			children = (
 				535AEEFA1E4E166500D5C542 /* AppDelegate.swift */,
 				5353B1EA1E4E26140089041B /* ViewControllers */,
+				5335E5031E524AD800E9E32D /* Views */,
+				539D9CAA1E511DA400A56998 /* ResponseMapper */,
 				5353B1E61E4E209B0089041B /* Models */,
+				539D9C8E1E50E44800A56998 /* NetworkLayers */,
+				539D9C9D1E5101A500A56998 /* VimeoVideoService */,
 				53827ABC1E4E1D1C00905319 /* StoryBoards */,
-				535AEF011E4E166500D5C542 /* Assets.xcassets */,
-				535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */,
-				5353B1E71E4E21220089041B /* Supporting Files */,
 			);
 			path = Vimster;
 			sourceTree = "<group>";
@@ -163,9 +226,50 @@
 		53827ABC1E4E1D1C00905319 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				5353B1E71E4E21220089041B /* Supporting Files */,
+				535AEF031E4E166500D5C542 /* LaunchScreen.storyboard */,
 				53827ABA1E4E1D1500905319 /* Login.storyboard */,
+				539D9CA61E510F2B00A56998 /* SearchCategory.storyboard */,
 			);
 			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		539D9C8E1E50E44800A56998 /* NetworkLayers */ = {
+			isa = PBXGroup;
+			children = (
+				539D9C951E50F3CC00A56998 /* NetworkLayerConfiguration.swift */,
+				539D9C931E50F35000A56998 /* BackendConfiguration.swift */,
+				539D9C911E50F11F00A56998 /* BackendAPIRequest.swift */,
+				539D9C971E50F84700A56998 /* BackendService.swift */,
+				539D9C991E5100DB00A56998 /* ServiceOperation.swift */,
+				539D9C8A1E50D72700A56998 /* NetworkService.swift */,
+				539D9C8F1E50EB4B00A56998 /* NetworkOperation.swift */,
+				539D9C8C1E50E44300A56998 /* NetworkQueue.swift */,
+				539D9C9B1E51017400A56998 /* NSError+Failure.swift */,
+			);
+			name = NetworkLayers;
+			sourceTree = "<group>";
+		};
+		539D9C9D1E5101A500A56998 /* VimeoVideoService */ = {
+			isa = PBXGroup;
+			children = (
+				539D9CA21E51050600A56998 /* VimeoVideoRequest.swift */,
+				539D9C9E1E51031800A56998 /* VimeoVideoOperation.swift */,
+				539D9CA41E51067300A56998 /* VimeoVideoService.swift */,
+			);
+			name = VimeoVideoService;
+			sourceTree = "<group>";
+		};
+		539D9CAA1E511DA400A56998 /* ResponseMapper */ = {
+			isa = PBXGroup;
+			children = (
+				539D9CAB1E511DCA00A56998 /* ParsedItem.swift */,
+				539D9CAD1E511DEC00A56998 /* ArrayResponseMapper.swift */,
+				539D9CB11E511E2100A56998 /* ResponseMapperProtocol.swift */,
+				539D9CAF1E511E0D00A56998 /* ResponseMapper.swift */,
+				539D9CB31E511E3B00A56998 /* VideoResponseMapper.swift */,
+			);
+			name = ResponseMapper;
 			sourceTree = "<group>";
 		};
 		53E767DD1E4E1B6C00897F2F /* VimsterTests */ = {
@@ -287,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539D9CA71E510F2B00A56998 /* SearchCategory.storyboard in Resources */,
 				53827ABB1E4E1D1500905319 /* Login.storyboard in Resources */,
 				535AEF051E4E166500D5C542 /* LaunchScreen.storyboard in Resources */,
 				535AEF021E4E166500D5C542 /* Assets.xcassets in Resources */,
@@ -400,13 +505,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539D9CA91E51103600A56998 /* SearchCategoryViewController.swift in Sources */,
 				5353B1EC1E4E265F0089041B /* LoginViewController.swift in Sources */,
+				539D9CB21E511E2100A56998 /* ResponseMapperProtocol.swift in Sources */,
+				539D9C941E50F35000A56998 /* BackendConfiguration.swift in Sources */,
+				539D9CB01E511E0D00A56998 /* ResponseMapper.swift in Sources */,
+				5335E5051E524AE600E9E32D /* VideoCell.swift in Sources */,
+				539D9C961E50F3CC00A56998 /* NetworkLayerConfiguration.swift in Sources */,
 				5353B1F61E4E46A90089041B /* NSMutableData+AES.m in Sources */,
+				539D9C901E50EB4B00A56998 /* NetworkOperation.swift in Sources */,
+				539D9C8B1E50D72700A56998 /* NetworkService.swift in Sources */,
+				539D9CAE1E511DEC00A56998 /* ArrayResponseMapper.swift in Sources */,
+				5335E4FB1E52326900E9E32D /* SearchResultsViewController.swift in Sources */,
+				5335E4F91E520E7200E9E32D /* SearchCategoryViewController+UIPickerView.swift in Sources */,
+				539D9CA51E51067300A56998 /* VimeoVideoService.swift in Sources */,
+				539D9CB41E511E3B00A56998 /* VideoResponseMapper.swift in Sources */,
 				5353B1E91E4E213D0089041B /* VimsterConstants.swift in Sources */,
 				5353B1EE1E4E26970089041B /* Oauth2.swift in Sources */,
+				539D9C8D1E50E44300A56998 /* NetworkQueue.swift in Sources */,
 				535AEEFB1E4E166500D5C542 /* AppDelegate.swift in Sources */,
+				539D9C9A1E5100DB00A56998 /* ServiceOperation.swift in Sources */,
+				539D9C9F1E51031800A56998 /* VimeoVideoOperation.swift in Sources */,
+				539D9C981E50F84700A56998 /* BackendService.swift in Sources */,
+				539D9CAC1E511DCA00A56998 /* ParsedItem.swift in Sources */,
+				539D9CA31E51050600A56998 /* VimeoVideoRequest.swift in Sources */,
+				539D9CA11E51037C00A56998 /* Video.swift in Sources */,
 				5353B1F91E4E46FA0089041B /* Vimster+Keychain.swift in Sources */,
 				5353B1F51E4E46A90089041B /* KeychainWrapper.m in Sources */,
+				53C970E91E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift in Sources */,
+				539D9C9C1E51017500A56998 /* NSError+Failure.swift in Sources */,
+				539D9C921E50F11F00A56998 /* BackendAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
