@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Video: ParsedItem {
+
+    var name: String?
+    var videoUrl: String?
+    var embedHTML: String?
+
+}
