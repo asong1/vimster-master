@@ -55,11 +55,20 @@
                         <outlet property="appDescriptionLabel" destination="h39-Zn-TxI" id="gGF-tf-shn"/>
                         <outlet property="appTitleLabel" destination="JIo-5G-Zo4" id="uh9-2W-eFI"/>
                         <outlet property="loginButton" destination="PJc-W7-Fne" id="ubx-u2-8Dd"/>
+                        <segue destination="HGb-L0-0HE" kind="show" identifier="SearchCategory" id="6IG-KU-byR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="god-E7-JTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="216.80000000000001" y="12.143928035982009"/>
+        </scene>
+        <!--SearchCategory-->
+        <scene sceneID="I2V-6P-sh6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchCategory" id="HGb-L0-0HE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H9u-ce-Ftx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="12"/>
         </scene>
     </scenes>
 </document>

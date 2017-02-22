@@ -7,43 +7,38 @@
 //
 
 import Foundation
-
 import UIKit
 import SafariServices
 import OAuthSwift
 
-enum URLHandlerType {
-    case `internal`
-    case external
-    case safari
-}
 
 class LoginViewController: UIViewController {
     
-    var oauthswift: OAuthSwift?
+    //MARK: - IBOutlets
     
     @IBOutlet weak var appTitleLabel: UILabel!
     @IBOutlet weak var appDescriptionLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
 
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    //MARK: - View Lifecycle Methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         self.setupViews()
     }
     
-    // MARK: - IBActions
-    @IBAction func loginPressed(_ sender: Any) {
-        self.login()
-    }
-
-    
-    fileprivate func login() {
-        if VimsterKeychain.shared.token == nil {
-            self.oauthLogin()
-        } else {
-            print(VimsterKeychain.shared.token)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if VimsterKeychain.shared.token != nil {
+            self.performSegue(withIdentifier: VimsterConstants.SearchCategory.segue, sender: self)
         }
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction func loginPressed(_ sender: Any) {
+        self.oauthLogin()
     }
     
     fileprivate func setupViews() {
@@ -56,8 +51,9 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     fileprivate func oauthLogin() {
-        self.oauthswift = OAuth2.oauthswift
-        OAuth2.oauthswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: OAuth2.oauthswift)
+        let handler = SafariURLHandler(viewController: self, oauthSwift: OAuth2.oauthswift)
+        
+        OAuth2.oauthswift.authorizeURLHandler = handler
         let _ = OAuth2.handle
     }
     

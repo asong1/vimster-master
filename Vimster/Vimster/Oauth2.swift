@@ -22,9 +22,9 @@ struct OAuth2 {
         scope: "", state: generateState(withLength: 20),
         success: { credential, response, parameters in
             VimsterKeychain.shared.setAccessToken(token: credential.oauthToken)
-    },
+        },
         failure: { error in
             print(error.localizedDescription)
-    }
+        }
     )
 }
