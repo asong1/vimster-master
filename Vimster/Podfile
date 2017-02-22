@@ -6,6 +6,7 @@ target ‘Vimster’ do
   use_frameworks!
   # Pods for Vimster
   pod 'OAuthSwift', '~> 1.1.0'
+  pod 'SVProgressHUD'
 
   target ‘VimsterTests’ do
     inherit! :search_paths
