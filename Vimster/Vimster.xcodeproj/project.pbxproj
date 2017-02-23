@@ -40,7 +40,7 @@
 		539D9CB01E511E0D00A56998 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CAF1E511E0D00A56998 /* ResponseMapper.swift */; };
 		539D9CB21E511E2100A56998 /* ResponseMapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CB11E511E2100A56998 /* ResponseMapperProtocol.swift */; };
 		539D9CB41E511E3B00A56998 /* VideoResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D9CB31E511E3B00A56998 /* VideoResponseMapper.swift */; };
-		53C970E91E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C970E81E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift */; };
+		53C970E91E54AF5A001F3477 /* SearchResultsViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C970E81E54AF5A001F3477 /* SearchResultsViewController+UICollectionView.swift */; };
 		53E767DF1E4E1B6C00897F2F /* VimsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */; };
 		E7D1436C9FA52AC96DF48A92 /* Pods_Vimster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3054173A1D82A6C3991BAB0 /* Pods_Vimster.framework */; };
 		FA114A20A76067CC362B357C /* Pods_VimsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F554C282CB06F658418C8BB /* Pods_VimsterTests.framework */; };
@@ -96,7 +96,7 @@
 		539D9CAF1E511E0D00A56998 /* ResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
 		539D9CB11E511E2100A56998 /* ResponseMapperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapperProtocol.swift; sourceTree = "<group>"; };
 		539D9CB31E511E3B00A56998 /* VideoResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoResponseMapper.swift; sourceTree = "<group>"; };
-		53C970E81E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchResultsViewController+UITableView.swift"; sourceTree = "<group>"; };
+		53C970E81E54AF5A001F3477 /* SearchResultsViewController+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchResultsViewController+UICollectionView.swift"; sourceTree = "<group>"; };
 		53E767DC1E4E1B6C00897F2F /* VimsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E767DE1E4E1B6C00897F2F /* VimsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimsterTests.swift; sourceTree = "<group>"; };
 		53E767E01E4E1B6C00897F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				539D9CA81E51103600A56998 /* SearchCategoryViewController.swift */,
 				5335E4F81E520E7200E9E32D /* SearchCategoryViewController+UIPickerView.swift */,
 				5335E4FA1E52326900E9E32D /* SearchResultsViewController.swift */,
-				53C970E81E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift */,
+				53C970E81E54AF5A001F3477 /* SearchResultsViewController+UICollectionView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -532,7 +532,7 @@
 				539D9CA11E51037C00A56998 /* Video.swift in Sources */,
 				5353B1F91E4E46FA0089041B /* Vimster+Keychain.swift in Sources */,
 				5353B1F51E4E46A90089041B /* KeychainWrapper.m in Sources */,
-				53C970E91E54AF5A001F3477 /* SearchResultsViewController+UITableView.swift in Sources */,
+				53C970E91E54AF5A001F3477 /* SearchResultsViewController+UICollectionView.swift in Sources */,
 				539D9C9C1E51017500A56998 /* NSError+Failure.swift in Sources */,
 				539D9C921E50F11F00A56998 /* BackendAPIRequest.swift in Sources */,
 			);

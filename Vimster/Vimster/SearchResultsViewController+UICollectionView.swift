@@ -1,5 +1,5 @@
 //
-//  SearchResultsViewController+UITableView.swift
+//  SearchResultsViewController+UICollectionView.swift
 //  Vimster
 //
 //  Created by Alex Song on 2/15/17.
@@ -7,6 +7,16 @@
 //
 
 import UIKit
+
+extension SearchResultsViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width
+        let height = calcHeightByAspectRatio(ratioWidth: 16, ratioHeight: 9, width: width)
+        return CGSize(width: collectionView.bounds.width - 20, height: height)
+    }
+    
+}
 
 extension SearchResultsViewController: UICollectionViewDelegate {}
 
@@ -35,4 +45,5 @@ extension SearchResultsViewController: UICollectionViewDataSource {
             return VimsterConstants.SearchCategory.numberOfItems
         }
     }
+    
 }

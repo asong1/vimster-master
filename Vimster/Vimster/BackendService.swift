@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SVProgressHUD
 
 final class BackendService {
 
@@ -37,6 +38,7 @@ final class BackendService {
             }
             
         }) { (data, error, statusCode) in
+            SVProgressHUD.dismiss()
             print("handle error: \(statusCode)")
         }
     }

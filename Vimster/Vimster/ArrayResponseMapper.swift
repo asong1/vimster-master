@@ -18,7 +18,6 @@ public final class ArrayResponseMapper<A: ParsedItem> {
             let item = try mapper(jsonNode)
             items.append(item)
         }
-        print(items)
         return items
     }
     

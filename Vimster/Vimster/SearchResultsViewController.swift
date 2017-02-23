@@ -27,8 +27,14 @@ class SearchResultsViewController: UIViewController {
 
     // MARK: - Setup
     
-    func setup() {
+    fileprivate func setup() {
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+    internal func calcHeightByAspectRatio(ratioWidth: CGFloat, ratioHeight: CGFloat, width: CGFloat) -> CGFloat {
+        let ratio = ratioHeight / ratioWidth
+        let height = width * ratio
+        return height
     }
 }
