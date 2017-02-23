@@ -51,7 +51,9 @@ final class SearchCategoryViewController: UIViewController {
         service?.videoInfo(forCategory: selectedCategory!, success: { (videos) in
             self.videos = videos
             SVProgressHUD.dismiss()
-            self.performSegue(withIdentifier: "SearchResults", sender: self)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "SearchResults", sender: self)
+            }
         }, failure: { (error) in
             print(error)
         })
