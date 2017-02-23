@@ -48,10 +48,7 @@ class NetworkService {
             if self.successCodes.contains(httpResponse.statusCode) {
                 success?(data, httpResponse)
             } else if self.failureCodes.contains(httpResponse.statusCode) {
-                switch httpResponse.statusCode {
-                default:
-                    failure?(data, error, httpResponse.statusCode)
-                }
+                failure?(data, error, httpResponse.statusCode)
             } else {
                 // Server returned response with status code different than
                 // expected `successCodes`.

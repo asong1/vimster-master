@@ -28,7 +28,7 @@ final class BackendService {
             
             var json: Any? = nil
             if let data = data {
-                json = try? JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as? [String: Any]
+                json = try? JSONSerialization.jsonObject(with: data as Data, options: .allowFragments)
             }
             if let json = json {
                 if JSONSerialization.isValidJSONObject(json) {

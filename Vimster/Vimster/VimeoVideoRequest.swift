@@ -26,7 +26,7 @@ class VimeoVideoRequest: BackendAPIRequest {
     
     var parameters: Parameters? {
         return [
-            "per_page": "3",
+            "per_page": "10",
             "sort" : "plays",
             "direction" : "desc"
         ]

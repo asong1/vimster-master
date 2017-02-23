@@ -17,8 +17,7 @@ final class VimeoVideoOperation: ServiceOperation {
     init(category: String) {
         self.category = category
     }
-    
-    // in operations this method is used to start an operation in an asynchronous manner
+
     public override func start() {
         super.start()
         let request = VimeoVideoRequest()
