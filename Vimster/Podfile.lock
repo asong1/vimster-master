@@ -1,0 +1,15 @@
+PODS:
+  - OAuthSwift (1.1.0)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - OAuthSwift (~> 1.1.0)
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  OAuthSwift: 7ec2c62274f6bdc30b1ba3b799c39a6fdcaea0e5
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: b26e03e96f64bb938aa1599d2d53ac966258d4c0
+
+COCOAPODS: 1.2.0
